@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAUL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #000000;
+        }
+
+        .navbar {
+            background-color: black;
+            color: #ffffff;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .jumbotron {
+            background-color: BLACK;
+            color: white;
+            padding: 100px 0;
+            text-align: Right;
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        .card {
+            border: none;
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card-title {
+            margin-top: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #6c757d;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .class col-lg-6 mb-4{
+            float: right !important;
+            margin: auto;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .smaller-avatar {
+            width: 260px;
+            height: 300px;
+            float: right; 
+        }
+        .hero-text {
+            text-align: left;
+            vertical-align: bottom;
+        }
+        .front-page {
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat; 
+        }
+        @media (max-width: 576px) {
+            footer {
+            font-size: 12px; 
+            padding: 8px; 
+        }
+        }
+        .centered-content {
+        display: flex;
+        justify-content: center;
+        }      
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .jumbotron {
+            background-image: url('WE.png');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #name {
+            color: black;
+        }
+        .lead {
+            color: black;
+        } 
+        .navbar-toggler {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+      </style>
+
+</style>
+
+    </style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">CPBC</a>  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutme">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    $(document).ready(function(){
+        $(".navbar-toggler").click(function(){
+            $("#navbarNav").collapse('toggle');
+        });
+    });
+</script>
+
+<div class="jumbotron" style="background-image: url('WE.png') ; background-size: cover;">  
+    <h1 class="display-4 text-center font-weight-bold" id="name" style="color: black;">Hi, I am Paul</h1>
+    <p class="lead text-muted text-center">A Computer Science Student</p>  
+    <img src="Paul.jpg" alt="Avatar" class="rounded-circle img-fluid mid-avatar">
+    </div>
+    </div>    
+    <section id="aboutme" class="section">
+        <div class="container min-vh-100">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p><strong>Name:</strong> Cire Paul Bernardo Cruz</p>
+                    <p><strong>Birthday:</strong> August 23, 2002</p>
+                    <p><strong>Address:</strong> Blk 13, Lot 17 Phase1-E, Sanlorenzo Subdivision, Brgy, Malitlit, Santa Rosa City, Laguna</p>
+                    <p><strong>Course:</strong> Bachelor of Science in Computer Science</p>
+                    <p><strong>Interests:</strong> I'm passionate about computer science and technology. I enjoy coding, problem-solving, and learning new programming languages and technologies.</p>
+                    <p><strong>Hobbies:</strong> Playing Instruments and Playing Basketball </p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="Paul.jpg" alt="Avatar" class="rounded-circle img-fluid smaller-avatar mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="skills" class="section">
+        <div class="container min-vh-100">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                <h2 class="text-center mb-4">Programming Languages</h2>
+                 <ul class="list-group">
+                    <li class="list-group-item">Python</li>
+                    <li class="list-group-item">Java</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item">C++</li>
+                    <li class="list-group-item">PHP</li>
+                    <li class="list-group-item">SQL</li>
+                    <li class="list-group-item">C</li>
+                    </div>
+                <div class="col-lg-6">
+                    <h2 class="text-center mb-4">Web Development Skills</h2>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li class="list-group-item">
+                <h3>Backend</h3>
+                <ul>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+
+                </ul>
+            </li>
+            <li class="list-group-item">
+                <h3>Database</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+    
+    </section>
+    
+    <section id="education" class="section">
+        <div class="container min-vh-100">
+            <h2 class="text-center mb-4">Education</h2>
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="lead mb-0">Our Lady of Fatima University</p>
+                            <p class="mb-0">Laguna Campus</p>
+                            <p class="mb-0">(2021-Present)</p>
+                        </div>
+                        <img src="olfu.png" alt="..." class="img-fluid img-thumbnail w-100">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="lead mb-0">Saint Benilde International School</p>
+                            <p class="mb-0">(2014-2021)</p>
+                        </div>
+                        <img src="sbis.png" alt="..." class="img-fluid img-thumbnail w-100">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="lead mb-0">Jose Rizal Memorial School</p>
+                            <p class="mb-0">(2013-2014)</p>
+                        </div>
+                        <img src="jrms.png" alt="..." class="img-fluid img-thumbnail w-100">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="lead mb-0">Segundo Esguerra Memorial Elementary School</p>
+                            <p class="mb-0">(2007-2013)</p>
+                        </div>
+                        <img src="semes.png" alt="..." class="img-fluid img-thumbnail w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container min-vh-100">
+            <h2 class="text-center mb-4">Contact</h2>
+            <ul class="list-group">
+                <li class="list-group-item">📧 Email: cirepaulcruz21@gmail.com</li>
+                <li class="list-group-item">📞 Phone: +63 931-9453-079</li>
+                <li class="list-group-item">📱 Facebook: Cire Paul Cruz</li>
+                <li class="list-group-item">📱 Instagram: @paul_cire</li>
+            </ul>
+        </div>
+    </section>    
+</div>      
+</section>    
+<footer class="bg-dark py-2">
+    <div class="container text-center">
+        <a href="#" class="text-light">© 2024 Cire Paul B. Cruz</a>
+    </div>
+</footer>
+</body>
+</html>
